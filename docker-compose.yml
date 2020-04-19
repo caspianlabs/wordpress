@@ -9,7 +9,7 @@ services:
       - .env
     environment:
         WORDPRESS_DB_PASSWORD: wordpress
-        XDEBUG_CONFIG: remote_host="${HOST_IP}"
+        XDEBUG_CONFIG: remote_host=${HOST_IP}
     ports:
         - "8080:80"
     volumes:
