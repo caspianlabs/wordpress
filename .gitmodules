@@ -1,0 +1,3 @@
+[submodule ".\\wp-content\\plugins\\wp-child-blocks"]
+	path = .\\wp-content\\plugins\\wp-child-blocks
+	url = git@github.com:caspianlabs/wp-child-blocks.git

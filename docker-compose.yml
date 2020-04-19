@@ -3,14 +3,18 @@ version: "3"
 services:
 
   wordpress:
-    image: wordpress:latest
+    image: caspianlabs/wordpress-xdebug:latest
     restart: always
+    env_file:
+      - .env
     environment:
         WORDPRESS_DB_PASSWORD: wordpress
+        XDEBUG_CONFIG: remote_host="${HOST_IP}"
     ports:
         - "8080:80"
     volumes:
       - "./html:/var/www/html"
+      - "./wp-content:/var/www/html/wp-content"
     depends_on:
         - mysql
 
