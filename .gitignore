@@ -6,3 +6,5 @@ html/
 mysql/
 .env
 
+# Wordpress
+wp-content/themes/twentytwenty/
